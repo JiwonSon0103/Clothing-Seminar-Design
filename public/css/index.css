@@ -92,7 +92,7 @@ article>header span{
   flex: 4;
 }
 .speaker-body h3 {
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 .speaker-body p {
   text-align: justify;
