@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;800;900&display=swap');
+
+/* Reset CSS */
+* {
+  font-family: 'Heebo', sans-serif;
+}
+html {
+  height:100%;
+}
+
+body{
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  font-size : 15px;
+  margin : 0;
+  color : #222;
+  line-height: 1.5rem; 
+  font-weight : normal;
+}
+
+a {
+  text-decoration: none !important;
+  color : #222 !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin : 0;
+  font-weight: normal;
+}
+
+input, button, textarea {
+  outline: none;
+}
+
+button {
+  border: none;
+  cursor : pointer; 
+}
+
+ul{
+  list-style : none;
+}
+
+/* vue app /
+#app{
+  height:100%;
+  display: flex;
+  flex-direction: column;
+}
+/ slick-slider */
+.banner .slider>.slick-prev{
+ display: none !important; 
+}
+.banner .slider>.slick-next{
+   display: none !important;
+}
+
+article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+article>header{
+  width: 70%;
+}
+article>header span{
+  padding: 10px;
+  font-size: 2em;
+  font-weight: 800;
+}
+.speakers-list{
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 70%;
+}
+.speaker{
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+}
+.speaker-img{
+  flex: 1;
+  margin-right: 2em;
+}
+.speaker-img img{
+  width: 180px;
+}
+.speaker-body{
+  flex: 4;
+}
+.speaker-body h3 {
+  font-weight: 600;
+}
+.speaker-body p {
+  text-align: justify;
+}
+.btn-wrap{
+  width: 70%;
+  margin-bottom: 2em;
+  text-align: center;
+}
+.btn-wrap button {
+  background-color: #787878;
+  color: white;
+  border-radius: 22px;
+  padding: 15px 90px;
+  font-size: 2em;
+  font-weight: 800;
+}
+
+@media (max-width: 767px) {
+    .speaker{
+        flex-direction: column;
+        width: 100%
+    }    
+    .speaker-img{
+        width: 100%;
+        text-align: center;
+    }
+    .speaker-img img{
+        width: 80%;
+    }
+    .speaker-body h3{
+        margin-top: 1em;
+    }
+    .btn-wrap button{
+      padding: 15px 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .speaker{
+        width: 100%
+    }
+}
