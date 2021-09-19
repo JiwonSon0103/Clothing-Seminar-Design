@@ -104,7 +104,13 @@ td{
 .section div{
   flex:1;
   border-left: 1px solid black;
-  padding: 10px 0;
+  padding: 10px 0px;
+}
+.section .section-01{
+  flex: 1;
+}
+.section .section-02{
+  flex: 2;
 }
 
 @media (max-width: 767px) {
