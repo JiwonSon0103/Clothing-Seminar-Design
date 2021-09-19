@@ -74,7 +74,6 @@ table {
 }
 thead{
   background-color: #787878;
-  color: white;
   font-weight: 550;
 }
 tbody{
@@ -82,6 +81,7 @@ tbody{
 }
 td{
   border: 1px solid;
+  padding: 8px 0;
 }
 .time{
   width: 10%;
@@ -96,7 +96,19 @@ td{
   width: 10%;
 }
 .content-speaker{
-  width: 30%;
+  width: 20%;
+}
+.section{
+  /* display: flex; */
+  display: flex;
+}
+.section div:first-child{
+  border-left: none;
+}
+.section div{
+  flex:1;
+  border-left: 1px solid black;
+  padding: 10px 0;
 }
 
 @media (max-width: 767px) {
