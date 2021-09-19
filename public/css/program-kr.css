@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap%27');
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;800;900&display=swap');
 
 /* Reset CSS */
 * {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Heebo', sans-serif;
 }
 html {
   height:100%;
@@ -64,42 +64,38 @@ article{
 }
 
 table {
-  width: 80%;
+  width: 85%;
   border: 1px solid;
   border-collapse: collapse;
   text-align: center;
   font-size: 0.9em;
   margin-top: 3em;
   margin-bottom: 3em;
+  font-weight: 500;
 }
 thead{
   background-color: #787878;
-  font-weight: 550;
-}
-tbody{
-  /* font-family: 'Noto Sans', sans-serif !important; */
 }
 td{
   border: 1px solid;
-  padding: 8px 0;
+  padding: 8px 5px;
 }
 .time{
   width: 10%;
 }
 .contents{
-  width: 80%;
+  width: 75%;
 }
 .moderator{
-  width: 10%;
+  width: 15%;
 }
 .content-title{
-  width: 10%;
+  width: 13%;
 }
 .content-speaker{
-  width: 20%;
+  width: 23.5%;
 }
 .section{
-  /* display: flex; */
   display: flex;
 }
 .section div:first-child{
