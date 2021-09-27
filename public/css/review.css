@@ -58,17 +58,190 @@ ul{
 }
 
 article{
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  align-items: center; */
+  align-items: center;
 }
 
+section{
+  border: 1px solid yellow;
+  width: 700px;
+  margin-bottom: 2em;
+}
 
+/* 입력 부분 */
+.writer{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border: 1px solid red;
+}
+
+.input-wrapper{
+  margin-right: 2em;
+  width: 89%;
+}
+.input-top{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.input-id{
+  width: 45%;
+  display: flex;
+}
+.input-pw{
+  width: 45%;
+  display: flex;
+}
+#name{
+  width: 100%;
+}
+#password{
+  width: 100%;
+}
+.input-bottom{
+  width: 100%;
+  height: 4em;
+  border: 1px solid red;
+  display: flex;
+}
+#comment{
+  width: 100%;
+}
+
+.button{
+  border: 1px solid red;
+  display: flex;
+  width: 10%;
+}
+.button button{
+  background-color: #787878;
+  color: white;
+  padding: 0 1.5em;
+  width: 100%;
+}
+
+/* 채팅 부분 */
+.chat-list{
+  border: 1px solid red;
+  height: 550px;
+  overflow: auto;
+}
+/* 스크롤바 디자인 */
+.chat-list::-webkit-scrollbar {
+  width: 10px;
+}
+.chat-list::-webkit-scrollbar-thumb {
+  background-color: #9a9999c7;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+.chat-list::-webkit-scrollbar-track {
+  background-color: #d3d2d2;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px white;
+}
+
+.chat{
+  border: 1px solid red;
+  background-color: #EBEBEB;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 7px;
+  display: grid;
+  height: max-content;
+  width: max-content;
+  max-width: 600px;
+}
+.chat p{
+  margin:0;
+}
+.chat-top{
+  border: 1px solid blue;
+  display: flex;
+  justify-content: space-between;
+}
+.chat-info{
+  font-size: 0.8em;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: space-between;
+  width: 0;
+  min-width: 150px;
+  margin-right: 20px;
+}
+
+.deleter{
+  display: flex;
+}
+.deleter button{
+  background-color: #DCDCDC;
+  padding: 0 10px;
+  font-size: 0.8em;
+}
+
+.chat-bottom{
+  border: 1px solid blue;
+}
 
 @media (max-width: 767px) {
-   
+  section{
+    width: 90%;
+  }
+
+  .writer{
+    margin-bottom: 1em;
+  }
+  
+  .input-wrapper{
+    margin-right: 1em;
+    width: 80%;
+  }
+  .input-top{
+    margin-bottom: 0.3em;
+  }
+  .input-id{
+    width: 48%;
+  }
+  .input-pw{
+    width: 48%;
+  }
+  .input-bottom{
+    height: 4.5em;
+  }
+  
+  .button{
+    width: 18%;
+  }
+  .button button{
+    padding: 0 0;
+  }
+
+  .chat-list{
+    height: 370px;
+  }  
+  .chat{
+    margin-bottom: 0.5em;
+    padding: 0.3em;
+    max-width: 250px;
+  }
+  .chat-info{
+    min-width: 140px;
+    line-height: 1.2em;
+  }
+  .chat-bottom{
+    font-size: 0.9em;
+  }
+  
+  .deleter{
+    min-height: 1.6em;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    
+  .chat-list{
+    height: 800px;
+  }  
 }
